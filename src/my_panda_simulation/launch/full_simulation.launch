@@ -1,0 +1,19 @@
+<launch>
+  <!-- Ορίσματα για έλεγχο -->
+  <arg name="use_rviz" default="true" />
+
+  <!-- Εκκίνηση του Gazebo με το Panda robot -->
+  <include file="$(find panda_moveit_config)/launch/demo_gazebo.launch" />
+
+  <!-- Προαιρετική Εκκίνηση του RViz με MoveIt -->
+  <group if="$(arg use_rviz)">
+    <include file="$(find panda_moveit_config)/launch/moveit_rviz.launch" />
+  </group>
+
+  <!-- Προαιρετικά: Εκτέλεση του custom MoveIt script -->
+  <!--
+  <node pkg="my_robot_controller" type="move_arm_joint_goal.py" name="move_arm_node" output="screen" />
+  <node pkg="my_panda_gripper_control" type="gripper_control_example.py" name="gripper_control_node" output="screen" />
+  -->
+
+</launch>

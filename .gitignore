@@ -1,0 +1,37 @@
+# Catkin build artifacts
+build/
+devel/
+install/
+logs/
+
+# Catkin workspace files
+.catkin_workspace
+src/CMakeLists.txt # The symlink in src/ to catkin's top-level CMakeLists.txt
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# C++ build artifacts
+*.o
+*.d
+*.so
+*.a
+
+# IDE and editor files
+.vscode/
+.idea/
+*~
+*.swp
+
+# Generated files in ROS packages (e.g., msg/srv/action generation)
+# Be careful with these - if your custom messages/services are small,
+# you might choose to include their definitions, but not the generated
+# C++/Python files. For a simple showcase, it's often fine to include them.
+# msg_gen/
+# srv_gen/
+# action_gen/
+
+# Other common ignored files
+.DS_Store
+.directory

@@ -1,0 +1,28 @@
+# Controllers for Panda arm and custom gripper in Gazebo
+
+# Joint State Controller: Publishes the state of all active joints.
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 50
+
+# Effort Controllers for Panda Arm (all 7 joints)
+# We can use a JointGroupEffortController for convenience
+panda_arm_controller:
+  type: "effort_controllers/JointGroupEffortController"
+  joints:
+    - panda_joint1
+    - panda_joint2
+    - panda_joint3
+    - panda_joint4
+    - panda_joint5
+    - panda_joint6
+    - panda_joint7
+  # You can add PID gains here if using a lower-level controller that requires them,
+  # but for direct effort commands from MoveIt!, often default or tuned PIDs work.
+  # pid: {p: 100.0, i: 0.01, d: 10.0} # Example PID values
+
+# Effort Controller for the custom gripper (finger_joint)
+gripper_controller:
+  type: "effort_controllers/JointEffortController" # Use JointEffortController for a single joint
+  joint: finger_joint
+  # pid: {p: 100.0, i: 0.01, d: 10.0} # Example PID values

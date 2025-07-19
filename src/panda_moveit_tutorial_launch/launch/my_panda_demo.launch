@@ -1,0 +1,8 @@
+<launch>
+  <rosparam command="load"
+            file="/home/testuser/catkin_ws_arm/config_overrides/moveit_resources_panda_moveit_config/config/kinematics.yaml"
+            ns="/move_group/robot_description_kinematics"/>
+
+  <include file="$(find moveit_resources_panda_moveit_config)/launch/demo.launch"
+           pass_all_args="true" />
+</launch>

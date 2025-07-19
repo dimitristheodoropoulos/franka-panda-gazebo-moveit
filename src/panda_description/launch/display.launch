@@ -1,0 +1,7 @@
+<launch>
+  <param name="robot_description" textfile="$(find panda_description)/urdf/panda.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find panda_description)/rviz/panda_display.rviz" />
+</launch>

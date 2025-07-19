@@ -1,0 +1,942 @@
+.
+├── build
+│   ├── atomic_configure
+│   ├── bin
+│   ├── catkin
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   ├── stamps
+│   │   │   │   └── catkin
+│   │   │   └── version
+│   │   └── CMakeFiles
+│   │       ├── clean_test_results_catkin.dir
+│   │       ├── _run_tests_catkin.dir
+│   │       ├── run_tests_catkin.dir
+│   │       ├── _run_tests_catkin_nosetests.dir
+│   │       ├── run_tests_catkin_nosetests.dir
+│   │       ├── _run_tests_catkin_nosetests_test.local_tests.dir
+│   │       ├── run_tests_catkin_nosetests_test.local_tests.dir
+│   │       ├── _run_tests_catkin_nosetests_test.unit_tests.dir
+│   │       └── run_tests_catkin_nosetests_test.unit_tests.dir
+│   ├── catkin_generated
+│   │   ├── installspace
+│   │   ├── metapackages
+│   │   │   ├── franka_ros
+│   │   │   └── trac_ik
+│   │   └── stamps
+│   │       └── Project
+│   ├── CMakeFiles
+│   │   ├── 3.25.1
+│   │   │   ├── CompilerIdC
+│   │   │   │   └── tmp
+│   │   │   └── CompilerIdCXX
+│   │   │       └── tmp
+│   │   ├── clean_test_results.dir
+│   │   ├── CMakeScratch
+│   │   ├── download_extra_data.dir
+│   │   ├── doxygen.dir
+│   │   ├── pkgRedirects
+│   │   ├── run_tests.dir
+│   │   └── tests.dir
+│   ├── franka_ros
+│   │   ├── franka_control
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   └── CMakeFiles
+│   │   │       ├── controller_manager_msgs_generate_messages_cpp.dir
+│   │   │       ├── controller_manager_msgs_generate_messages_eus.dir
+│   │   │       ├── controller_manager_msgs_generate_messages_lisp.dir
+│   │   │       ├── controller_manager_msgs_generate_messages_nodejs.dir
+│   │   │       ├── controller_manager_msgs_generate_messages_py.dir
+│   │   │       ├── franka_combined_control_node.dir
+│   │   │       ├── franka_control_node.dir
+│   │   │       └── franka_state_controller.dir
+│   │   ├── franka_description
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   └── CMakeFiles
+│   │   │       ├── clean_test_results_franka_description.dir
+│   │   │       ├── _run_tests_franka_description.dir
+│   │   │       ├── run_tests_franka_description.dir
+│   │   │       ├── _run_tests_franka_description_nosetests.dir
+│   │   │       ├── run_tests_franka_description_nosetests.dir
+│   │   │       ├── _run_tests_franka_description_nosetests_test.dual_panda_example_urdf.py.dir
+│   │   │       ├── run_tests_franka_description_nosetests_test.dual_panda_example_urdf.py.dir
+│   │   │       ├── _run_tests_franka_description_nosetests_test.franka_robot_urdf.py.dir
+│   │   │       ├── run_tests_franka_description_nosetests_test.franka_robot_urdf.py.dir
+│   │   │       ├── _run_tests_franka_description_nosetests_test.hand_urdf.py.dir
+│   │   │       └── run_tests_franka_description_nosetests_test.hand_urdf.py.dir
+│   │   ├── franka_example_controllers
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   ├── cmake
+│   │   │   ├── CMakeFiles
+│   │   │   │   ├── franka_example_controllers.dir
+│   │   │   │   ├── franka_example_controllers_gencfg.dir
+│   │   │   │   ├── franka_example_controllers_gencpp.dir
+│   │   │   │   ├── _franka_example_controllers_generate_messages_check_deps_JointTorqueComparison.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages_cpp.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages_eus.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages_lisp.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages_nodejs.dir
+│   │   │   │   ├── franka_example_controllers_generate_messages_py.dir
+│   │   │   │   ├── franka_example_controllers_geneus.dir
+│   │   │   │   ├── franka_example_controllers_genlisp.dir
+│   │   │   │   ├── franka_example_controllers_gennodejs.dir
+│   │   │   │   ├── franka_example_controllers_genpy.dir
+│   │   │   │   ├── teleop_gripper_node.dir
+│   │   │   │   ├── visualization_msgs_generate_messages_cpp.dir
+│   │   │   │   ├── visualization_msgs_generate_messages_eus.dir
+│   │   │   │   ├── visualization_msgs_generate_messages_lisp.dir
+│   │   │   │   ├── visualization_msgs_generate_messages_nodejs.dir
+│   │   │   │   └── visualization_msgs_generate_messages_py.dir
+│   │   │   └── docs
+│   │   ├── franka_gazebo
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   ├── CMakeFiles
+│   │   │   │   ├── control_toolbox_gencfg.dir
+│   │   │   │   ├── control_toolbox_generate_messages_cpp.dir
+│   │   │   │   ├── control_toolbox_generate_messages_eus.dir
+│   │   │   │   ├── control_toolbox_generate_messages_lisp.dir
+│   │   │   │   ├── control_toolbox_generate_messages_nodejs.dir
+│   │   │   │   ├── control_toolbox_generate_messages_py.dir
+│   │   │   │   ├── franka_gripper_sim.dir
+│   │   │   │   └── franka_hw_sim.dir
+│   │   │   └── test
+│   │   │       └── CMakeFiles
+│   │   ├── franka_gripper
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   ├── cmake
+│   │   │   └── CMakeFiles
+│   │   │       ├── actionlib_generate_messages_cpp.dir
+│   │   │       ├── actionlib_generate_messages_eus.dir
+│   │   │       ├── actionlib_generate_messages_lisp.dir
+│   │   │       ├── actionlib_generate_messages_nodejs.dir
+│   │   │       ├── actionlib_generate_messages_py.dir
+│   │   │       ├── control_msgs_generate_messages_cpp.dir
+│   │   │       ├── control_msgs_generate_messages_eus.dir
+│   │   │       ├── control_msgs_generate_messages_lisp.dir
+│   │   │       ├── control_msgs_generate_messages_nodejs.dir
+│   │   │       ├── control_msgs_generate_messages_py.dir
+│   │   │       ├── franka_gripper.dir
+│   │   │       ├── franka_gripper_gencpp.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspAction.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspActionFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspActionGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspActionResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspEpsilon.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_GraspResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingAction.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingActionFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingActionGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingActionResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_HomingResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveAction.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveActionFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveActionGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveActionResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_MoveResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopAction.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopActionFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopActionGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopActionResult.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopFeedback.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopGoal.dir
+│   │   │       ├── _franka_gripper_generate_messages_check_deps_StopResult.dir
+│   │   │       ├── franka_gripper_generate_messages_cpp.dir
+│   │   │       ├── franka_gripper_generate_messages.dir
+│   │   │       ├── franka_gripper_generate_messages_eus.dir
+│   │   │       ├── franka_gripper_generate_messages_lisp.dir
+│   │   │       ├── franka_gripper_generate_messages_nodejs.dir
+│   │   │       ├── franka_gripper_generate_messages_py.dir
+│   │   │       ├── franka_gripper_geneus.dir
+│   │   │       ├── franka_gripper_genlisp.dir
+│   │   │       ├── franka_gripper_gennodejs.dir
+│   │   │       ├── franka_gripper_genpy.dir
+│   │   │       ├── franka_gripper_node.dir
+│   │   │       ├── geometry_msgs_generate_messages_cpp.dir
+│   │   │       ├── geometry_msgs_generate_messages_eus.dir
+│   │   │       ├── geometry_msgs_generate_messages_lisp.dir
+│   │   │       ├── geometry_msgs_generate_messages_nodejs.dir
+│   │   │       ├── geometry_msgs_generate_messages_py.dir
+│   │   │       ├── sensor_msgs_generate_messages_cpp.dir
+│   │   │       ├── sensor_msgs_generate_messages_eus.dir
+│   │   │       ├── sensor_msgs_generate_messages_lisp.dir
+│   │   │       ├── sensor_msgs_generate_messages_nodejs.dir
+│   │   │       ├── sensor_msgs_generate_messages_py.dir
+│   │   │       ├── trajectory_msgs_generate_messages_cpp.dir
+│   │   │       ├── trajectory_msgs_generate_messages_eus.dir
+│   │   │       ├── trajectory_msgs_generate_messages_lisp.dir
+│   │   │       ├── trajectory_msgs_generate_messages_nodejs.dir
+│   │   │       └── trajectory_msgs_generate_messages_py.dir
+│   │   ├── franka_hw
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   ├── CMakeFiles
+│   │   │   │   ├── franka_control_services.dir
+│   │   │   │   └── franka_hw.dir
+│   │   │   └── test
+│   │   │       └── CMakeFiles
+│   │   ├── franka_msgs
+│   │   │   ├── catkin_generated
+│   │   │   │   ├── installspace
+│   │   │   │   └── stamps
+│   │   │   ├── cmake
+│   │   │   └── CMakeFiles
+│   │   │       ├── actionlib_msgs_generate_messages_cpp.dir
+│   │   │       ├── actionlib_msgs_generate_messages_eus.dir
+│   │   │       ├── actionlib_msgs_generate_messages_lisp.dir
+│   │   │       ├── actionlib_msgs_generate_messages_nodejs.dir
+│   │   │       ├── actionlib_msgs_generate_messages_py.dir
+│   │   │       ├── franka_msgs_gencpp.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryAction.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryActionFeedback.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryActionGoal.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryActionResult.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryFeedback.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryGoal.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_ErrorRecoveryResult.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_Errors.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_FrankaState.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetCartesianImpedance.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetEEFrame.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetForceTorqueCollisionBehavior.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetFullCollisionBehavior.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetJointImpedance.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetKFrame.dir
+│   │   │       ├── _franka_msgs_generate_messages_check_deps_SetLoad.dir
+│   │   │       ├── franka_msgs_generate_messages_cpp.dir
+│   │   │       ├── franka_msgs_generate_messages.dir
+│   │   │       ├── franka_msgs_generate_messages_eus.dir
+│   │   │       ├── franka_msgs_generate_messages_lisp.dir
+│   │   │       ├── franka_msgs_generate_messages_nodejs.dir
+│   │   │       ├── franka_msgs_generate_messages_py.dir
+│   │   │       ├── franka_msgs_geneus.dir
+│   │   │       ├── franka_msgs_genlisp.dir
+│   │   │       ├── franka_msgs_gennodejs.dir
+│   │   │       ├── franka_msgs_genpy.dir
+│   │   │       ├── std_msgs_generate_messages_cpp.dir
+│   │   │       ├── std_msgs_generate_messages_eus.dir
+│   │   │       ├── std_msgs_generate_messages_lisp.dir
+│   │   │       ├── std_msgs_generate_messages_nodejs.dir
+│   │   │       └── std_msgs_generate_messages_py.dir
+│   │   ├── franka_ros
+│   │   │   ├── catkin_generated
+│   │   │   │   └── stamps
+│   │   │   └── CMakeFiles
+│   │   │       └── _catkin_empty_exported_target.dir
+│   │   └── franka_visualization
+│   │       ├── catkin_generated
+│   │       │   ├── installspace
+│   │       │   └── stamps
+│   │       └── CMakeFiles
+│   │           ├── gripper_joint_state_publisher.dir
+│   │           └── robot_joint_state_publisher.dir
+│   ├── gtest
+│   │   ├── CMakeFiles
+│   │   ├── googlemock
+│   │   │   └── CMakeFiles
+│   │   │       ├── gmock.dir
+│   │   │       └── gmock_main.dir
+│   │   ├── googletest
+│   │   │   └── CMakeFiles
+│   │   │       ├── gtest.dir
+│   │   │       └── gtest_main.dir
+│   │   └── lib
+│   ├── moveit_tutorials
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── moveit_tutorials
+│   │   ├── CMakeFiles
+│   │   │   ├── bond_generate_messages_cpp.dir
+│   │   │   ├── bond_generate_messages_eus.dir
+│   │   │   ├── bond_generate_messages_lisp.dir
+│   │   │   ├── bond_generate_messages_nodejs.dir
+│   │   │   ├── bond_generate_messages_py.dir
+│   │   │   ├── graph_msgs_generate_messages_cpp.dir
+│   │   │   ├── graph_msgs_generate_messages_eus.dir
+│   │   │   ├── graph_msgs_generate_messages_lisp.dir
+│   │   │   ├── graph_msgs_generate_messages_nodejs.dir
+│   │   │   ├── graph_msgs_generate_messages_py.dir
+│   │   │   ├── moveit_msgs_generate_messages_cpp.dir
+│   │   │   ├── moveit_msgs_generate_messages_eus.dir
+│   │   │   ├── moveit_msgs_generate_messages_lisp.dir
+│   │   │   ├── moveit_msgs_generate_messages_nodejs.dir
+│   │   │   ├── moveit_msgs_generate_messages_py.dir
+│   │   │   ├── moveit_ros_manipulation_gencfg.dir
+│   │   │   ├── moveit_ros_planning_gencfg.dir
+│   │   │   ├── nodelet_generate_messages_cpp.dir
+│   │   │   ├── nodelet_generate_messages_eus.dir
+│   │   │   ├── nodelet_generate_messages_lisp.dir
+│   │   │   ├── nodelet_generate_messages_nodejs.dir
+│   │   │   ├── nodelet_generate_messages_py.dir
+│   │   │   ├── nodelet_topic_tools_gencfg.dir
+│   │   │   ├── object_recognition_msgs_generate_messages_cpp.dir
+│   │   │   ├── object_recognition_msgs_generate_messages_eus.dir
+│   │   │   ├── object_recognition_msgs_generate_messages_lisp.dir
+│   │   │   ├── object_recognition_msgs_generate_messages_nodejs.dir
+│   │   │   ├── object_recognition_msgs_generate_messages_py.dir
+│   │   │   ├── octomap_msgs_generate_messages_cpp.dir
+│   │   │   ├── octomap_msgs_generate_messages_eus.dir
+│   │   │   ├── octomap_msgs_generate_messages_lisp.dir
+│   │   │   ├── octomap_msgs_generate_messages_nodejs.dir
+│   │   │   ├── octomap_msgs_generate_messages_py.dir
+│   │   │   ├── pcl_msgs_generate_messages_cpp.dir
+│   │   │   ├── pcl_msgs_generate_messages_eus.dir
+│   │   │   ├── pcl_msgs_generate_messages_lisp.dir
+│   │   │   ├── pcl_msgs_generate_messages_nodejs.dir
+│   │   │   ├── pcl_msgs_generate_messages_py.dir
+│   │   │   ├── pcl_ros_gencfg.dir
+│   │   │   ├── shape_msgs_generate_messages_cpp.dir
+│   │   │   ├── shape_msgs_generate_messages_eus.dir
+│   │   │   ├── shape_msgs_generate_messages_lisp.dir
+│   │   │   ├── shape_msgs_generate_messages_nodejs.dir
+│   │   │   ├── shape_msgs_generate_messages_py.dir
+│   │   │   ├── topic_tools_generate_messages_cpp.dir
+│   │   │   ├── topic_tools_generate_messages_eus.dir
+│   │   │   ├── topic_tools_generate_messages_lisp.dir
+│   │   │   ├── topic_tools_generate_messages_nodejs.dir
+│   │   │   └── topic_tools_generate_messages_py.dir
+│   │   └── doc
+│   │       ├── bullet_collision_checker
+│   │       │   └── CMakeFiles
+│   │       ├── collision_environments
+│   │       │   ├── catkin_generated
+│   │       │   └── CMakeFiles
+│   │       ├── controller_configuration
+│   │       │   └── CMakeFiles
+│   │       ├── creating_moveit_plugins
+│   │       │   └── lerp_motion_planner
+│   │       ├── hand_eye_calibration
+│   │       │   └── CMakeFiles
+│   │       ├── interactivity
+│   │       │   └── CMakeFiles
+│   │       ├── kinematics
+│   │       │   └── CMakeFiles
+│   │       ├── mesh_filter
+│   │       │   └── CMakeFiles
+│   │       ├── motion_planning_api
+│   │       │   └── CMakeFiles
+│   │       ├── motion_planning_pipeline
+│   │       │   └── CMakeFiles
+│   │       ├── move_group_interface
+│   │       │   └── CMakeFiles
+│   │       ├── move_group_python_interface
+│   │       │   ├── catkin_generated
+│   │       │   └── CMakeFiles
+│   │       ├── moveit_cpp
+│   │       │   └── CMakeFiles
+│   │       ├── perception_pipeline
+│   │       │   └── CMakeFiles
+│   │       ├── pick_place
+│   │       │   └── CMakeFiles
+│   │       ├── planning
+│   │       │   └── CMakeFiles
+│   │       ├── planning_scene
+│   │       │   └── CMakeFiles
+│   │       ├── planning_scene_ros_api
+│   │       │   └── CMakeFiles
+│   │       ├── robot_model_and_robot_state
+│   │       │   └── CMakeFiles
+│   │       ├── state_display
+│   │       │   └── CMakeFiles
+│   │       ├── subframes
+│   │       │   └── CMakeFiles
+│   │       ├── tests
+│   │       │   └── CMakeFiles
+│   │       ├── trajopt_planner
+│   │       │   └── CMakeFiles
+│   │       └── visualizing_collisions
+│   │           └── CMakeFiles
+│   ├── my_franka_gazebo
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── my_franka_gazebo
+│   │   └── CMakeFiles
+│   │       ├── dynamic_reconfigure_gencfg.dir
+│   │       ├── dynamic_reconfigure_generate_messages_cpp.dir
+│   │       ├── dynamic_reconfigure_generate_messages_eus.dir
+│   │       ├── dynamic_reconfigure_generate_messages_lisp.dir
+│   │       ├── dynamic_reconfigure_generate_messages_nodejs.dir
+│   │       ├── dynamic_reconfigure_generate_messages_py.dir
+│   │       ├── gazebo_msgs_generate_messages_cpp.dir
+│   │       ├── gazebo_msgs_generate_messages_eus.dir
+│   │       ├── gazebo_msgs_generate_messages_lisp.dir
+│   │       ├── gazebo_msgs_generate_messages_nodejs.dir
+│   │       ├── gazebo_msgs_generate_messages_py.dir
+│   │       ├── gazebo_ros_gencfg.dir
+│   │       ├── std_srvs_generate_messages_cpp.dir
+│   │       ├── std_srvs_generate_messages_eus.dir
+│   │       ├── std_srvs_generate_messages_lisp.dir
+│   │       ├── std_srvs_generate_messages_nodejs.dir
+│   │       ├── std_srvs_generate_messages_py.dir
+│   │       ├── tf2_msgs_generate_messages_cpp.dir
+│   │       ├── tf2_msgs_generate_messages_eus.dir
+│   │       ├── tf2_msgs_generate_messages_lisp.dir
+│   │       ├── tf2_msgs_generate_messages_nodejs.dir
+│   │       ├── tf2_msgs_generate_messages_py.dir
+│   │       ├── tf_generate_messages_cpp.dir
+│   │       ├── tf_generate_messages_eus.dir
+│   │       ├── tf_generate_messages_lisp.dir
+│   │       ├── tf_generate_messages_nodejs.dir
+│   │       └── tf_generate_messages_py.dir
+│   ├── my_panda_gripper_control
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── my_panda_gripper_control
+│   │   └── CMakeFiles
+│   ├── my_panda_simulation
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── my_panda_simulation
+│   │   └── CMakeFiles
+│   ├── my_robot_controller
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── my_robot_controller
+│   │   └── CMakeFiles
+│   ├── panda_description
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── panda_description
+│   │   └── CMakeFiles
+│   ├── panda_moveit_config
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── panda_moveit_config
+│   │   └── CMakeFiles
+│   ├── panda_moveit_tutorial_launch
+│   │   ├── catkin_generated
+│   │   │   ├── installspace
+│   │   │   └── stamps
+│   │   │       └── panda_moveit_tutorial_launch
+│   │   └── CMakeFiles
+│   │       ├── roscpp_generate_messages_cpp.dir
+│   │       ├── roscpp_generate_messages_eus.dir
+│   │       ├── roscpp_generate_messages_lisp.dir
+│   │       ├── roscpp_generate_messages_nodejs.dir
+│   │       ├── roscpp_generate_messages_py.dir
+│   │       ├── rosgraph_msgs_generate_messages_cpp.dir
+│   │       ├── rosgraph_msgs_generate_messages_eus.dir
+│   │       ├── rosgraph_msgs_generate_messages_lisp.dir
+│   │       ├── rosgraph_msgs_generate_messages_nodejs.dir
+│   │       └── rosgraph_msgs_generate_messages_py.dir
+│   ├── test_results
+│   └── trac_ik
+│       ├── trac_ik
+│       │   ├── catkin_generated
+│       │   │   └── stamps
+│       │   └── CMakeFiles
+│       ├── trac_ik_examples
+│       │   ├── catkin_generated
+│       │   │   ├── installspace
+│       │   │   └── stamps
+│       │   └── CMakeFiles
+│       │       └── ik_tests.dir
+│       ├── trac_ik_kinematics_plugin
+│       │   ├── catkin_generated
+│       │   │   ├── installspace
+│       │   │   └── stamps
+│       │   └── CMakeFiles
+│       │       └── trac_ik_kinematics_plugin.dir
+│       ├── trac_ik_lib
+│       │   ├── catkin_generated
+│       │   │   ├── installspace
+│       │   │   └── stamps
+│       │   └── CMakeFiles
+│       │       └── trac_ik.dir
+│       └── trac_ik_python
+│           ├── catkin_generated
+│           │   ├── installspace
+│           │   └── stamps
+│           ├── CMakeFiles
+│           │   ├── _trac_ik_wrap.dir
+│           │   └── trac_ik_wrap_swig_compilation.dir
+│           └── swig
+├── build_isolated
+├── .catkin_tools
+│   └── profiles
+│       └── default
+│           └── packages
+│               ├── catkin
+│               ├── franka_control
+│               ├── franka_description
+│               ├── franka_example_controllers
+│               ├── franka_gazebo
+│               ├── franka_gripper
+│               ├── franka_hw
+│               ├── franka_msgs
+│               ├── franka_ros
+│               ├── franka_visualization
+│               ├── moveit_tutorials
+│               ├── my_franka_gazebo
+│               ├── my_panda_gripper_control
+│               ├── my_panda_simulation
+│               ├── my_robot_controller
+│               ├── panda_description
+│               ├── panda_moveit_config
+│               ├── panda_moveit_tutorial_launch
+│               ├── trac_ik
+│               ├── trac_ik_examples
+│               ├── trac_ik_kinematics_plugin
+│               ├── trac_ik_lib
+│               └── trac_ik_python
+├── config_overrides
+│   └── moveit_resources_panda_moveit_config
+│       └── config
+├── devel
+│   ├── bin
+│   ├── include
+│   │   ├── franka_example_controllers
+│   │   ├── franka_gripper
+│   │   └── franka_msgs
+│   ├── lib
+│   │   ├── franka_control
+│   │   ├── franka_example_controllers
+│   │   ├── franka_gazebo
+│   │   ├── franka_gripper
+│   │   ├── franka_hw
+│   │   ├── franka_visualization
+│   │   ├── moveit_tutorials
+│   │   ├── pkgconfig
+│   │   ├── python3
+│   │   │   └── dist-packages
+│   │   │       ├── catkin
+│   │   │       ├── franka_example_controllers
+│   │   │       ├── franka_gripper
+│   │   │       ├── franka_msgs
+│   │   │       └── trac_ik_python
+│   │   ├── trac_ik_examples
+│   │   └── trac_ik_python
+│   └── share
+│       ├── catkin
+│       │   └── cmake
+│       ├── common-lisp
+│       │   └── ros
+│       │       ├── franka_example_controllers
+│       │       ├── franka_gripper
+│       │       └── franka_msgs
+│       ├── franka_control
+│       │   └── cmake
+│       ├── franka_description
+│       │   └── cmake
+│       ├── franka_example_controllers
+│       │   ├── cmake
+│       │   └── docs
+│       ├── franka_gazebo
+│       │   └── cmake
+│       ├── franka_gripper
+│       │   ├── cmake
+│       │   └── msg
+│       ├── franka_hw
+│       │   └── cmake
+│       ├── franka_msgs
+│       │   ├── cmake
+│       │   └── msg
+│       ├── franka_visualization
+│       │   └── cmake
+│       ├── gennodejs
+│       │   └── ros
+│       │       ├── franka_example_controllers
+│       │       ├── franka_gripper
+│       │       └── franka_msgs
+│       ├── moveit_tutorials
+│       │   └── cmake
+│       ├── my_franka_gazebo
+│       │   └── cmake
+│       ├── my_panda_gripper_control
+│       │   └── cmake
+│       ├── my_panda_simulation
+│       │   └── cmake
+│       ├── my_robot_controller
+│       │   └── cmake
+│       ├── panda_description
+│       │   └── cmake
+│       ├── panda_moveit_config
+│       │   └── cmake
+│       ├── panda_moveit_tutorial_launch
+│       │   └── cmake
+│       ├── roseus
+│       │   └── ros
+│       │       ├── franka_example_controllers
+│       │       ├── franka_gripper
+│       │       └── franka_msgs
+│       ├── trac_ik_examples
+│       │   └── cmake
+│       ├── trac_ik_kinematics_plugin
+│       │   └── cmake
+│       ├── trac_ik_lib
+│       │   └── cmake
+│       └── trac_ik_python
+│           └── cmake
+├── devel_isolated
+├── logs
+│   ├── catkin
+│   ├── franka_control
+│   ├── franka_description
+│   ├── franka_example_controllers
+│   ├── franka_gazebo
+│   ├── franka_gripper
+│   ├── franka_hw
+│   ├── franka_msgs
+│   ├── franka_ros
+│   ├── franka_visualization
+│   ├── moveit_tutorials
+│   ├── my_franka_gazebo
+│   ├── my_panda_gripper_control
+│   ├── my_panda_simulation
+│   ├── my_robot_controller
+│   ├── panda_description
+│   ├── panda_moveit_config
+│   ├── panda_moveit_tutorial_launch
+│   ├── trac_ik
+│   ├── trac_ik_examples
+│   ├── trac_ik_kinematics_plugin
+│   ├── trac_ik_lib
+│   └── trac_ik_python
+└── src
+    ├── catkin
+    │   ├── bin
+    │   ├── cmake
+    │   │   ├── em
+    │   │   ├── env-hooks
+    │   │   ├── platform
+    │   │   ├── symlink_install
+    │   │   ├── templates
+    │   │   ├── test
+    │   │   └── tools
+    │   ├── doc
+    │   │   ├── adv_user_guide
+    │   │   ├── dev_guide
+    │   │   │   └── api
+    │   │   ├── howto
+    │   │   │   ├── format1
+    │   │   │   └── format2
+    │   │   └── user_guide
+    │   ├── .git
+    │   │   ├── branches
+    │   │   ├── hooks
+    │   │   ├── info
+    │   │   ├── logs
+    │   │   │   └── refs
+    │   │   ├── objects
+    │   │   │   ├── info
+    │   │   │   └── pack
+    │   │   └── refs
+    │   │       ├── heads
+    │   │       ├── remotes
+    │   │       └── tags
+    │   ├── python
+    │   │   └── catkin
+    │   │       └── __pycache__
+    │   └── test
+    │       ├── checks
+    │       │   ├── fuerte
+    │       │   └── unstable
+    │       ├── local_tests
+    │       ├── mock_resources
+    │       │   ├── src
+    │       │   └── src-fail
+    │       ├── network_tests
+    │       └── unit_tests
+    ├── franka_ros
+    │   ├── .ci
+    │   ├── cmake
+    │   ├── franka_control
+    │   │   ├── config
+    │   │   ├── include
+    │   │   │   └── franka_control
+    │   │   ├── launch
+    │   │   └── src
+    │   ├── franka_description
+    │   │   ├── meshes
+    │   │   │   ├── collision
+    │   │   │   └── visual
+    │   │   ├── robots
+    │   │   │   ├── common
+    │   │   │   ├── dual_panda
+    │   │   │   ├── fr3
+    │   │   │   └── panda
+    │   │   └── test
+    │   ├── franka_example_controllers
+    │   │   ├── cfg
+    │   │   ├── config
+    │   │   ├── include
+    │   │   │   └── franka_example_controllers
+    │   │   ├── launch
+    │   │   │   └── rviz
+    │   │   ├── msg
+    │   │   ├── scripts
+    │   │   └── src
+    │   ├── franka_gazebo
+    │   │   ├── config
+    │   │   ├── include
+    │   │   │   └── franka_gazebo
+    │   │   ├── launch
+    │   │   ├── models
+    │   │   │   ├── pick_tray
+    │   │   │   ├── place_tray
+    │   │   │   ├── stone
+    │   │   │   └── table
+    │   │   ├── src
+    │   │   ├── test
+    │   │   │   └── launch
+    │   │   └── world
+    │   ├── franka_gripper
+    │   │   ├── action
+    │   │   ├── config
+    │   │   ├── include
+    │   │   │   └── franka_gripper
+    │   │   ├── launch
+    │   │   ├── msg
+    │   │   └── src
+    │   ├── franka_hw
+    │   │   ├── include
+    │   │   │   └── franka_hw
+    │   │   ├── src
+    │   │   └── test
+    │   │       ├── config
+    │   │       └── launch
+    │   ├── franka_msgs
+    │   │   ├── action
+    │   │   ├── msg
+    │   │   └── srv
+    │   ├── franka_ros
+    │   ├── franka_visualization
+    │   │   ├── config
+    │   │   ├── launch
+    │   │   └── src
+    │   ├── .git
+    │   │   ├── branches
+    │   │   ├── hooks
+    │   │   ├── info
+    │   │   ├── logs
+    │   │   │   └── refs
+    │   │   ├── objects
+    │   │   │   ├── info
+    │   │   │   └── pack
+    │   │   └── refs
+    │   │       ├── heads
+    │   │       ├── remotes
+    │   │       └── tags
+    │   └── .github
+    │       └── workflows
+    ├── moveit_tutorials
+    │   ├── doc
+    │   │   ├── benchmarking
+    │   │   ├── bullet_collision_checker
+    │   │   │   ├── images
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── chomp_planner
+    │   │   ├── collision_environments
+    │   │   │   └── scripts
+    │   │   ├── controller_configuration
+    │   │   │   └── src
+    │   │   ├── creating_moveit_plugins
+    │   │   │   └── lerp_motion_planner
+    │   │   ├── custom_constraint_samplers
+    │   │   ├── gazebo_simulation
+    │   │   ├── getting_started
+    │   │   ├── hand_eye_calibration
+    │   │   │   └── images
+    │   │   ├── ikfast
+    │   │   ├── interactivity
+    │   │   │   ├── include
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── joystick_control_teleoperation
+    │   │   ├── kinematics
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── kinematics_configuration
+    │   │   ├── mesh_filter
+    │   │   │   ├── launch
+    │   │   │   ├── meshes
+    │   │   │   ├── rviz
+    │   │   │   └── urdf
+    │   │   ├── motion_planning_api
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── motion_planning_pipeline
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── move_group_interface
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── move_group_python_interface
+    │   │   │   ├── launch
+    │   │   │   └── scripts
+    │   │   ├── moveit_commander_scripting
+    │   │   ├── moveit_cpp
+    │   │   │   ├── config
+    │   │   │   ├── images
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── moveit_deep_grasps
+    │   │   ├── moveit_grasps
+    │   │   ├── moveit_task_constructor
+    │   │   ├── multiple_robot_arms
+    │   │   │   └── images
+    │   │   ├── ompl_interface
+    │   │   ├── opw_kinematics
+    │   │   │   └── images
+    │   │   ├── perception_pipeline
+    │   │   │   ├── bags
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── persistent_scenes_and_states
+    │   │   ├── pick_place
+    │   │   │   └── src
+    │   │   ├── pilz_industrial_motion_planner
+    │   │   ├── planning
+    │   │   │   └── src
+    │   │   ├── planning_adapters
+    │   │   ├── planning_constraints
+    │   │   ├── planning_scene
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── planning_scene_monitor
+    │   │   ├── planning_scene_ros_api
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── planning_with_approximated_constraint_manifolds
+    │   │   ├── quickstart_in_rviz
+    │   │   ├── realtime_servo
+    │   │   ├── robot_model_and_robot_state
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── setup_assistant
+    │   │   ├── state_display
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── stomp_planner
+    │   │   ├── subframes
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── test_debugging
+    │   │   ├── tests
+    │   │   │   └── test
+    │   │   ├── time_parameterization
+    │   │   ├── trac_ik
+    │   │   ├── trajopt_planner
+    │   │   │   ├── launch
+    │   │   │   └── src
+    │   │   ├── urdf_srdf
+    │   │   └── visualizing_collisions
+    │   │       ├── launch
+    │   │       └── src
+    │   ├── .git
+    │   │   ├── branches
+    │   │   ├── hooks
+    │   │   ├── info
+    │   │   ├── logs
+    │   │   │   └── refs
+    │   │   ├── objects
+    │   │   │   ├── info
+    │   │   │   └── pack
+    │   │   └── refs
+    │   │       ├── heads
+    │   │       ├── remotes
+    │   │       └── tags
+    │   ├── .github
+    │   │   └── workflows
+    │   ├── _scripts
+    │   ├── _static
+    │   └── _themes
+    │       └── sphinx_rtd_theme
+    │           └── static
+    ├── my_franka_gazebo
+    │   ├── launch
+    │   └── src
+    ├── my_panda_gripper_control
+    │   ├── config
+    │   ├── launch
+    │   ├── scripts
+    │   └── src
+    ├── my_panda_simulation
+    │   ├── launch
+    │   └── src
+    ├── my_robot_controller
+    │   ├── scripts
+    │   └── src
+    ├── panda_description
+    │   ├── launch
+    │   ├── rviz
+    │   └── urdf
+    ├── panda_moveit_config
+    │   ├── config
+    │   ├── .git
+    │   │   ├── branches
+    │   │   ├── hooks
+    │   │   ├── info
+    │   │   ├── logs
+    │   │   │   └── refs
+    │   │   ├── objects
+    │   │   │   ├── info
+    │   │   │   └── pack
+    │   │   └── refs
+    │   │       ├── heads
+    │   │       ├── remotes
+    │   │       └── tags
+    │   └── launch
+    ├── panda_moveit_tutorial_launch
+    │   ├── include
+    │   │   └── panda_moveit_tutorial_launch
+    │   ├── launch
+    │   └── src
+    └── trac_ik
+        ├── .git
+        │   ├── branches
+        │   ├── hooks
+        │   ├── info
+        │   ├── logs
+        │   │   └── refs
+        │   ├── objects
+        │   │   ├── info
+        │   │   └── pack
+        │   └── refs
+        │       ├── heads
+        │       ├── remotes
+        │       └── tags
+        ├── trac_ik
+        ├── trac_ik_examples
+        │   ├── launch
+        │   └── src
+        ├── trac_ik_kinematics_plugin
+        │   ├── include
+        │   │   └── trac_ik
+        │   └── src
+        ├── trac_ik_lib
+        │   ├── include
+        │   │   └── trac_ik
+        │   └── src
+        └── trac_ik_python
+            ├── scripts
+            ├── src
+            │   └── trac_ik_python
+            └── swig
+
+939 directories
