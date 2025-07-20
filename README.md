@@ -16,53 +16,53 @@ This project is organized as a standard Catkin workspace, with key custom packag
 
 catkin_ws_arm/
 ├── src/
-│   ├── my_franka_gazebo/
-│   │   ├── CMakeLists.txt
-│   │   ├── launch/
-│   │   │   └── panda_gazebo.launch  # Main launch for spawning Panda in Gazebo
-│   │   └── package.xml
-│   │
-│   ├── my_panda_simulation/
-│   │   ├── CMakeLists.txt
-│   │   ├── launch/
-│   │   │   ├── full_simulation.launch  # Orchestrates Gazebo, controllers, MoveIt!
-│   │   │   └── loaded_robot_description.urdf # Potential custom URDF loading
-│   │   └── package.xml
-│   │
-│   ├── my_robot_controller/
-│   │   ├── CMakeLists.txt
-│   │   ├── package.xml
-│   │   └── scripts/
-│   │       └── move_arm_joint_goal.py # Python script for MoveIt! commands
-│   │
-│   ├── panda_description/
-│   │   ├── CMakeLists.txt
-│   │   ├── launch/
-│   │   │   └── display.launch        # For displaying URDF in RViz
-│   │   ├── package.xml
-│   │   └── urdf/
-│   │       └── panda.urdf            # Robot's main URDF file
-│   │
-│   └── panda_moveit_config/
-│       ├── CMakeLists.txt
-│       ├── config/
-│       │   ├── controllers.yaml      # ros_control controller definitions (PIDs, types)
-│       │   ├── gazebo_controllers.yaml # Gazebo-specific controller mappings
-│       │   ├── joint_limits.yaml
-│       │   ├── kinematics.yaml
-│       │   ├── ompl_planning.yaml
-│       │   ├── panda.srdf.xacro      # Semantic Robot Description Format for MoveIt!
-│       │   └── ros_controllers.yaml  # ROS Control definitions for MoveIt!
-│       ├── launch/
-│       │   ├── demo_gazebo.launch    # Launches MoveIt! RViz with Gazebo integration
-│       │   ├── move_group.launch     # Core MoveIt! planning group launch
-│       │   ├── moveit.rviz           # RViz configuration for MoveIt!
-│       │   ├── planning_context.launch
-│       │   └── ros_control_moveit_controller_manager.launch.xml
-│       └── package.xml
+│   ├── my_franka_gazebo/
+│   │   ├── CMakeLists.txt
+│   │   ├── launch/
+│   │   │   └── panda_gazebo.launch # Main launch for spawning Panda in Gazebo (intended custom launch)
+│   │   └── package.xml
+│   │
+│   ├── my_panda_simulation/
+│   │   ├── CMakeLists.txt
+│   │   ├── launch/
+│   │   │   ├── full_simulation.launch # Orchestrates Gazebo, controllers, MoveIt! (intended custom launch)
+│   │   │   └── loaded_robot_description.urdf # Potential custom URDF loading
+│   │   └── package.xml
+│   │
+│   ├── my_robot_controller/
+│   │   ├── CMakeLists.txt
+│   │   ├── package.xml
+│   │   └── scripts/
+│   │       └── move_arm_joint_goal.py # Python script for MoveIt! commands
+│   │
+│   ├── panda_description/
+│   │   ├── CMakeLists.txt
+│   │   ├── launch/
+│   │   │   └── display.launch # For displaying URDF in RViz
+│   │   ├── package.xml
+│   │   └── urdf/
+│   │       └── panda.urdf # Robot's main URDF file
+│   │
+│   └── panda_moveit_config/
+│       ├── CMakeLists.txt
+│       ├── config/
+│       │   ├── controllers.yaml # ros_control controller definitions (PIDs, types)
+│       │   ├── gazebo_controllers.yaml # Gazebo-specific controller mappings
+│       │   ├── joint_limits.yaml
+│       │   ├── kinematics.yaml
+│       │   ├── ompl_planning.yaml
+│       │   ├── panda.srdf.xacro # Semantic Robot Description Format for MoveIt!
+│       │   └── ros_controllers.yaml # ROS Control definitions for MoveIt!
+│       ├── launch/
+│       │   ├── demo_gazebo.launch # Launches MoveIt! RViz with Gazebo integration
+│       │   ├── move_group.launch # Core MoveIt! planning group launch
+│       │   ├── moveit.rviz # RViz configuration for MoveIt!
+│       │   ├── planning_context.launch
+│       │   └── ros_control_moveit_controller_manager.launch.xml
+│       └── package.xml
 │
-└── .gitignore                     # Git ignore rules for build artifacts
-└── README.md                      # This readme file
+└── .gitignore # Git ignore rules for build artifacts
+└── README.md # This readme file
 
 
 ## ✅ Successfully Implemented & Configured Components
@@ -73,7 +73,7 @@ Despite encountering a hardware-specific runtime issue (detailed below), the cor
     * The complete URDF model of the Franka Panda arm (`panda_description/urdf/panda.urdf`) has been integrated and verified. This forms the foundational kinematic and dynamic representation of the robot within ROS.
 
 2.  **Gazebo Simulation Integration (`my_franka_gazebo`, `my_panda_simulation` packages):**
-    * Custom Gazebo launch files (e.g., `my_franka_gazebo/launch/panda_gazebo.launch` and `my_panda_simulation/launch/full_simulation.launch`) are configured to spawn the Panda arm into the simulation environment.
+    * Custom Gazebo launch files (e.g., `my_franka_gazebo/launch/panda_gazebo.launch` and `my_panda_simulation/launch/full_simulation.launch`) are configured to spawn the Panda arm into the simulation environment. **Note:** The core Gazebo integration for the Panda model itself is primarily managed via the `franka_ros` package's `franka_gazebo/launch/panda.launch` which is included by `panda_moveit_config/launch/demo_gazebo.launch`.
     * The `gazebo_ros_control` plugin is correctly configured within the robot's URDF, enabling `ros_control` to interface with Gazebo's physics engine for realistic simulation.
 
 3.  **ROS Control Setup (`panda_moveit_config`, `my_robot_controller` packages):**
@@ -107,7 +107,7 @@ This project is fully configured and *would run successfully* on hardware that s
     This launch file will bring up Gazebo with the Panda arm, its controllers, and the MoveIt! RViz interface for visualization and planning.
 
     ```bash
-    roslaunch my_panda_simulation full_simulation.launch
+    roslaunch panda_moveit_config demo_gazebo.launch
     ```
 
 4.  **Run a joint goal command (optional, in a new terminal after Step 3):**
@@ -127,7 +127,8 @@ The `gzserver` process (Gazebo's simulation engine) crashes immediately after th
 
 1.  **Initial Troubleshooting:** Standard debugging steps were performed, including verifying ROS/Gazebo installations, checking package dependencies, and tuning PID gains (which was a separate, successful debugging effort that improved controller stability but did not resolve the crash).
 2.  **Eliminating GUI as Cause:** The persistence of the crash in headless mode confirmed that the issue was not with the visual rendering client (`gzclient`) but with `gzserver` itself or its interaction with the underlying system's graphics capabilities.
-3.  **Investigation of System Requirements:** Given the low-level nature of the crash and the absence of detailed logs, attention shifted to hardware and driver compatibility, specifically regarding graphics API support.
+3.  **`empty_world.launch` Test and Robot Description Parameter:**
+    Attempting to launch a simple `roslaunch gazebo_ros empty_world.launch` also resulted in a segmentation fault. Further investigation revealed that because a previous `roslaunch` command had set the `/robot_description` parameter on the ROS parameter server (containing the full Franka URDF with its Gazebo plugins and `franka_hw` interfaces), the `gazebo_ros_control` plugin (which is part of standard Gazebo and loads by default in `empty_world.launch`) then attempted to initialize these interfaces, leading to the same crash. This confirmed that the problem was not related to the robot model spawning itself, but to the *loading and initialization of the Gazebo-specific Franka hardware interfaces* (`franka_hw/FrankaStateInterface` and `franka_hw/FrankaModelInterface`) within `gzserver`.
 4.  **OpenGL Version Check:**
     * Utilizing `glxinfo | grep "OpenGL renderer string\|OpenGL version string"`, the system reported:
         ```
@@ -137,7 +138,7 @@ The `gzserver` process (Gazebo's simulation engine) crashes immediately after th
     * Further research confirmed that **Gazebo 11 (version 11.15.1, as installed) requires OpenGL 3.3 or higher** for stable operation. My current development hardware (Intel HD Graphics 4000) only supports OpenGL 3.0 with the installed drivers.
 
 ### Conclusion of Diagnosis:
-The `Segmentation fault` is directly caused by a **fundamental incompatibility between Gazebo 11's OpenGL requirement and the maximum OpenGL version supported by the Intel HD Graphics 4000 GPU** on the development machine. Gazebo's underlying simulation or rendering components attempt to utilize OpenGL features (available in 3.3+) that are not present or correctly implemented in OpenGL 3.0, leading to the crash.
+The `Segmentation fault` is directly caused by a **fundamental incompatibility between Gazebo 11's OpenGL requirement and the maximum OpenGL version supported by the Intel HD Graphics 4000 GPU** on the development machine. Gazebo's underlying simulation or rendering components attempt to utilize OpenGL features (available in 3.3+) that are not present or correctly implemented in OpenGL 3.0, leading to the crash. Specifically, the crash occurs when the `gazebo_ros_control` plugin and the Franka-specific hardware interfaces (`franka_hw/FrankaStateInterface`, `franka_hw/FrankaModelInterface`) attempt to initialize within `gzserver`, likely due to their reliance on OpenGL 3.3+ features.
 
 ## 🎯 Demonstrated Capabilities (with compatible hardware)
 
